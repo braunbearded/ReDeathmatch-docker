@@ -26,6 +26,11 @@ services:
       - ./configs/maps.ini:/home/hlds_user/hlds/cstrike/mapcycle.txt
       - ./configs/server.cfg:/home/hlds_user/hlds/cstrike/server.cfg
       - ./configs/motd.txt:/home/hlds_user/hlds/cstrike/motd.txt
+      - ./configs/esl_5on5.cfg:/home/hlds_user/hlds/cstrike/esl_5on5.cfg
+      #- ./configs/spawns/old:/home/hlds_user/hlds/cstrike/addons/amxmodx/configs/csdm/spawns # old spawns
+      - ./configs/spawns/new_converted:/home/hlds_user/hlds/cstrike/addons/amxmodx/data/redm/converted # converted spawns will be saved here
+      - ./configs/spawns/converted:/home/hlds_user/hlds/cstrike/addons/amxmodx/data/redm # use this to mount spawns to the correct folder. You can also edit them now
+
     command:
       [
         '-debug -game cstrike -bots -pingboost $PINGBOOST +ip 0.0.0.0 -port $PORT +map $MAP -maxplayers $MAXPLAYERS +sv_lan $SV_LAN +rcon_password "$RCON_PASSWORD" +hostname "$SERVER_NAME"',
