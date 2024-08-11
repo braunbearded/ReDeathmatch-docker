@@ -1,31 +1,30 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Cstrike MOTD</title>
-<style type="text/css">
-       body {
-            background: #000;
-            margin: 8px;
-            color: #FFB000;
-            font: normal 16px/20px Verdana, Tahoma, sans-serif;
-        }
-
-        a {
-            color: #FFF;
-            text-decoration: underline;
-        }
-
-        a:hover {
-            color: #EEE;
-            text-decoration: none;
-        }
-</style>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.3; margin: 0; padding: 5px; background-color: #f4f4f4; color: #333; }
+        h1 { font-size: 12px; margin: 2px 0; } /* Reduced margin for h1 */
+        h2 { font-size: 12px; margin: 5px 0; }
+        p, ul { margin: 5px 0; padding: 3px 8px; background-color: #e0e0e0; border-radius: 4px; }
+        ul { padding-left: 23px; } /* Increased padding for the list */
+        a { text-decoration: none; font-weight: bold; }
+    </style>
 </head>
 <body>
-You are playing Counter-Strike v1.6<br>
-Visit the official CS web site @<br>
-www.counter-strike.net<br>
-<a href="http://www.counter-strike.net">Visit Counter-Strike.net</a>
+    <h1>CSDM Deathmatch Server 🕹️</h1>
+    <p>Welcome to my CS 1.6 (Docker) Deathmatch server! No nonsense, no custom skins or sounds - just pure CSDM action! For detailed setup instructions, feedback and updates, visit: <br> <a href="https://github.com/braunbearded/ReDeathmatch-docker">https://github.com/braunbearded/ReDeathmatch-docker</a></p>
+    <h2>Requirements 📦</h2>
+    <p>Runs smoothly on low-powered machines, such as Oracle Always Free tier servers. Only requires Docker to be installed.</p>
+    <h2>Technical Details ⚙️</h2>
+    <ul>
+        <li>ReHLDS: Re-engineered HLDS.</li>
+        <li>ReGameDLL_CS: Game DLL reimplementation.</li>
+        <li>ReDeathMatch: Deathmatch plugin.</li>
+        <li>YaPB: Bot plugin for CS.</li>
+        <li>HLDSDocker: Dockerimage for HLDS servers.</li>
+        <li>Docker: Containerization platform.</li>
+    </ul>
 </body>
 </html>
+
